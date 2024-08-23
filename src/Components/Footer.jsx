@@ -9,7 +9,7 @@ const Footer = () => {
       {/* Left Side: GibWork Logo */}
       <div className="flex items-center space-x-4">
         <img src={GibWorkImage} alt="Gib Work" className="h-12 w-12" />
-        <span className="text-[20px] font-semibold">GibWork</span>
+        <span className="text-[20px] font-semibold hidden-on-sm">GibWork</span>
       </div>
 
       {/* Center: Text */}

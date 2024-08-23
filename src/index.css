@@ -25,14 +25,42 @@
   }
 }
 
-/* Ensure TaskCard fits within the scroll container */
+
 .scroll-content > div {
   flex-shrink: 0;
-  margin-right: 10px; /* Adjust as needed */
+  margin-right: 10px; 
 }
 
-/* Optional: If you want to have a small gap between cards */
 .scroll-content > div {
   flex-shrink: 0;
-  margin-right: 10px; /* Adjust the gap between cards as needed */
+  margin-right: 10px;
+}
+
+@media (max-width: 640px) {
+  .hidden-on-sm {
+    display: none;
+  }
+}
+
+.scrollable-content {
+  overflow-y: scroll;
+  height: 100vh; /* Ensure it takes the full screen height */
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; /* Adjust the width of the scrollbar */
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #3f267f; /* Set the color of the scrollbar thumb */
+  border-radius: 10px; /* Add rounded corners if desired */
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: #b091ff; /* Set the color of the scrollbar track */
+}
+@media (max-width: 767px) {
+  .scrollable-content {
+    height: auto; /* Set height to auto on smaller screens */
+  }
 }

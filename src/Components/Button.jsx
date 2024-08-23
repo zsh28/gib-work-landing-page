@@ -2,7 +2,7 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 const ButtonWrapper = () => {
   return (
-    <div className=" min-h-[100px] flex items-center justify-center">
+    <div className=" min-h-[50px] flex items-center justify-center mb-10 mt-10">
       <NeumorphismButton />
     </div>
   );

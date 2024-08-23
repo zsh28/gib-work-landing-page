@@ -13,8 +13,8 @@ const Testimonials = () => {
 
   return (
     <div className="py-12 max-w-[1200px] h-auto w-auto justify-center items-center text-center mx-auto">
-      <h2 className="text-white font-bold text-[32px] mb-8 text-center">Testimonials</h2>
-      <div className="max-w-6xl mx-auto px-4">
+      <h2 className="text-white font-bold text-[32px] mb-10 text-center">Testimonials</h2>
+      <div className="max-w-[1200px] mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-4">
           {paginatedTestimonials.map((testimonial) => (
             <div

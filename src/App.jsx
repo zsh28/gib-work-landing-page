@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 
 export default function App() {
   return (
-    <div className="overflow-y-scroll scrollbar-thin scrollbar-thumb-[#3f267f] scrollbar-track-[#b091ff] h-screen">
+    <div className="scrollable-content">
       <div className="bg-[#8151fd] min-h-screen">
         <Navbar />
         <Header />
