@@ -18,7 +18,7 @@ const Testimonials = () => {
         {paginatedTestimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="w-full md:w-[calc(33%-1rem)] bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out"
+            className="w-full md:w-[calc(33%-1rem)] bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_10px_rgba(255,255,255,0.5)]"
             style={{
               height: "250px",
             }}
