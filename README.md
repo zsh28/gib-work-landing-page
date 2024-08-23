@@ -20,7 +20,7 @@ This repository contains the redesigned landing page for [Gib.Work](https://gib.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/gibwork-landing-page-redesign.git
+   git clone https://github.com/zsh28/gibwork-landing-page-redesign.git
    cd gibwork-landing-page-redesign
    ```
 
