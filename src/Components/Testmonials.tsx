@@ -12,36 +12,37 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="py-12 max-w-[1200px] h-auto w-auto justify-center items-center text-center mx-auto">
+    <div className="py-12 max-w-[1200px] w-full h-auto justify-center items-center text-center mx-auto px-4">
       <h2 className="text-white font-bold text-[32px] mb-10 text-center">Testimonials</h2>
-      <div className="max-w-[1200px] mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-4">
-          {paginatedTestimonials.map((testimonial) => (
-            <div
-              key={testimonial.id}
-              className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center mx-auto space-y-4 max-w-[400px] hover:shadow-[0_4px_20px_rgba(255,255,255,0.8)] transition-shadow duration-300 ease-in-out"
-            >
-              <img
-                src={testimonial.pfp}
-                alt={testimonial.username}
-                className="w-16 h-16 rounded-full"
-              />
-              <p className="text-lg italic pr-2">"{testimonial.message}"</p>
-              <h3 className="font-semibold">{testimonial.username}</h3>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-center mt-8">
-          {Array.from({ length: totalPages }).map((_, index) => (
-            <span
-              key={index}
-              onClick={() => setCurrentPage(index)}
-              className={`cursor-pointer w-4 h-4 mx-2 rounded-full ${
-                currentPage === index ? 'bg-white' : 'bg-gray-400'
-              }`}
+      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+        {paginatedTestimonials.map((testimonial) => (
+          <div
+            key={testimonial.id}
+            className="w-full md:w-[calc(33%-1rem)] bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out"
+            style={{
+              height: "250px",
+            }}
+          >
+            <img
+              src={testimonial.pfp}
+              alt={testimonial.username}
+              className="w-16 h-16 rounded-full"
             />
-          ))}
-        </div>
+            <p className="text-lg italic pr-2">"{testimonial.message}"</p>
+            <h3 className="font-semibold">{testimonial.username}</h3>
+          </div>
+        ))}
+      </div>
+      <div className="flex justify-center mt-8">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <span
+            key={index}
+            onClick={() => setCurrentPage(index)}
+            className={`cursor-pointer w-4 h-4 mx-2 rounded-full ${
+              currentPage === index ? 'bg-white' : 'bg-gray-400'
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
