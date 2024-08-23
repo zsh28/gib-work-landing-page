@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Ensure TaskCard fits within the scroll container */
+.scroll-content > div {
+  flex-shrink: 0;
+  margin-right: 10px; /* Adjust as needed */
+}
+
+/* Optional: If you want to have a small gap between cards */
+.scroll-content > div {
+  flex-shrink: 0;
+  margin-right: 10px; /* Adjust the gap between cards as needed */
+}
