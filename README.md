@@ -67,7 +67,7 @@ This repository contains the redesigned landing page for [Gib.Work](https://gib.
 ## Usage
 
 - **Navbar:** Includes links to social media platforms like Discord, Twitter, and YouTube.
-- **Header:** Features a prominent heading with the Gib.Work logo.
+- **Header:** Features a prominent heading with the text "gib.work" displayed in a large, bold font.
 - **Card:** Highlights key messages for users looking for work or talented individuals.
 - **ButtonWrapper:** Contains a neumorphism-style button to encourage user engagement.
 - **Experience:** Showcases tasks and rewards using a scrolling container.
