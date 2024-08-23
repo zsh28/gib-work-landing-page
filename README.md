@@ -1,7 +1,3 @@
-Here’s a sample `README.md` for your project:
-
----
-
 # GibWork Landing Page Redesign
 
 ## Overview
