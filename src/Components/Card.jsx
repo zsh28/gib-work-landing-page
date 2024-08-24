@@ -8,7 +8,7 @@ const Card = () => {
           <h1 className="text-[#8151fd] text-3xl font-bold mb-4 mt-4">
             Finding talented individuals?
           </h1>
-          <p className="text-lg text-gray-950 font-bold mb-4">
+          <p className="text-lg text-gray-950 mb-4">
             Join our decentralized platform to start earning from bounties, answering questions, and completing tasks. You can also create your own opportunities!
           </p>
         </div>

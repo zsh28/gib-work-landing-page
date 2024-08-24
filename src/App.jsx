@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Experience from "./Components/Experience";
 import ButtonWrapper from "./Components/Button";
 import Testimonials from "./Components/Testmonials";
+import Collaborators from "./Components/Collaborators";
 import Footer from "./Components/Footer";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <ButtonWrapper />
         <Experience />
         <Testimonials />
+        <Collaborators />
         <Footer />
       </div>
     </div>

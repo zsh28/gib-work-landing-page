@@ -1,5 +1,7 @@
 import ProfilePic from '../assets/github.png';
 import Usdc from '../assets/logo.png';
+import anchor from '../assets/anchor.png';
+import solanaciv from '../assets/solanaciv.jpg';
 
 const tasks = [
     {
@@ -32,35 +34,46 @@ const tasks = [
       points: 100,
       currencyIcon: Usdc,
     },
-  ];
-
+];
 
 const testimonials = [
     {
       id: 1,
-      pfp: ProfilePic, // Replace with actual image URL
+      pfp: ProfilePic, 
       message: "This is an amazing product! Highly recommended.",
       username: "John Doe",
     },
     {
       id: 2,
-      pfp: ProfilePic, // Replace with actual image URL
+      pfp: ProfilePic, 
       message: "I've had a fantastic experience with this service.",
       username: "Jane Smith",
     },
     {
       id: 3,
-      pfp: ProfilePic, // Replace with actual image URL
+      pfp: ProfilePic, 
       message: "Top-notch customer support and quality!",
       username: "Michael Brown",
     },
     {
       id: 4,
-      pfp: ProfilePic, // Replace with actual image URL
+      pfp: ProfilePic, 
       message: "I can't imagine going back to life before this. I can't imagine going back to life before this.",
       username: "Emily White",
     },
-    // Add more testimonials here
-  ];
+];
 
-export { testimonials, tasks };
+const collaborators = [
+    {
+      name: "SolanaCiv",
+      description: "Fully on-chain strategy game inspired by Civilization. Built on @Solana.",
+      logo: solanaciv,
+    },
+    {
+      name: "Anchor",
+      description: "Anchor is a framework for Solana providing several convenient tools for writing smart contracts.",
+      logo: anchor,
+    },
+];
+
+export { testimonials, tasks, collaborators };

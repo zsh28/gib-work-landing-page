@@ -13,12 +13,15 @@ const Testimonials = () => {
 
   return (
     <div className="py-12 max-w-[1200px] w-full h-auto justify-center items-center text-center mx-auto px-4">
-      <h2 className="text-white font-bold text-[32px] mb-10 text-center">Testimonials</h2>
-      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+      <h2 className="text-white font-bold text-[32px] mb-2 text-center">Testimonials</h2>
+      <div className="text-white text-[20px] mb-10">
+        See what our current users have to say
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {paginatedTestimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="w-full md:w-[calc(33%-1rem)] bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_10px_rgba(255,255,255,0.5)]"
+            className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_10px_rgba(255,255,255,0.5)]"
             style={{
               height: "250px",
             }}
@@ -26,9 +29,9 @@ const Testimonials = () => {
             <img
               src={testimonial.pfp}
               alt={testimonial.username}
-              className="w-16 h-16 rounded-full"
+              className="w-16 h-16 rounded-full mb-4"
             />
-            <p className="text-lg italic pr-2">"{testimonial.message}"</p>
+            <p className="text-lg italic mb-2">"{testimonial.message}"</p>
             <h3 className="font-semibold">{testimonial.username}</h3>
           </div>
         ))}
