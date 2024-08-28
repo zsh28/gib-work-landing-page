@@ -3,15 +3,15 @@ import { collaborators } from "../Mockdata/data";
 const Collaborators = () => {
   return (
     <div className="max-w-[1200px] w-full h-auto justify-center items-center text-center mx-auto px-4 mb-10">
-      <h2 className="text-white font-bold text-[32px] mb-2 text-center">
+      <h2 className="text-black font-bold text-[32px] mb-2 text-center">
         In Collaboration with
       </h2>
-      <div className="text-white text-[20px] mb-10">
+      <div className="text-[#8151fd] text-[20px] mb-10">
           Top Open Source initiatives
         </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
         {collaborators.map((collaborator, index) => (
-          <div key={index} className="bg-white rounded-lg p-4 flex items-center shadow-lg">
+          <div key={index} className="bg-white rounded-lg p-4 flex items-center transition-shadow duration-300 ease-in-out shadow-[0_0_20px_10px_rgba(129,81,253,0.5)]">
             <img
               src={collaborator.logo}
               alt={`${collaborator.name} logo`}

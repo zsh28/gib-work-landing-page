@@ -5,12 +5,13 @@ import Experience from "./Components/Experience";
 import ButtonWrapper from "./Components/Button";
 import Testimonials from "./Components/Testmonials";
 import Collaborators from "./Components/Collaborators";
+import Partners from "./Components/Partners";
 import Footer from "./Components/Footer";
 
 export default function App() {
   return (
     <div className="scrollable-content">
-      <div className="bg-[#8151fd] min-h-screen">
+      <div className="bg-gray-300 min-h-screen">
         <Navbar />
         <Header />
         <Card />
@@ -18,6 +19,7 @@ export default function App() {
         <Experience />
         <Testimonials />
         <Collaborators />
+        <Partners />
         <Footer />
       </div>
     </div>

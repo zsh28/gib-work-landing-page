@@ -13,15 +13,15 @@ const Testimonials = () => {
 
   return (
     <div className="py-12 max-w-[1200px] w-full h-auto justify-center items-center text-center mx-auto px-4">
-      <h2 className="text-white font-bold text-[32px] mb-2 text-center">Testimonials</h2>
-      <div className="text-white text-[20px] mb-10">
+      <h2 className="text-black font-bold text-[32px] mb-2 text-center">Testimonials</h2>
+      <div className="text-[#8151fd] text-[20px] mb-10">
         See what our current users have to say
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {paginatedTestimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out hover:shadow-[0_0_20px_10px_rgba(255,255,255,0.5)]"
+            className="bg-white rounded-lg p-6 flex flex-col justify-center items-center text-center transition-shadow duration-300 ease-in-out shadow-[0_0_20px_10px_rgba(129,81,253,0.5)]"
             style={{
               height: "250px",
             }}
@@ -42,7 +42,7 @@ const Testimonials = () => {
             key={index}
             onClick={() => setCurrentPage(index)}
             className={`cursor-pointer w-4 h-4 mx-2 rounded-full ${
-              currentPage === index ? 'bg-white' : 'bg-gray-400'
+              currentPage === index ? 'bg-[#8151fd]' : 'bg-white'
             }`}
           />
         ))}

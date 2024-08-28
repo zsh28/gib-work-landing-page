@@ -15,7 +15,7 @@ const NeumorphismButton = () => {
         px-4 py-2 rounded-lg w-[200px] justify-center text-lg font-medium 
         flex items-center gap-2 
         text-[#8151fd] bg-white
-        shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
+        shadow-[0_0_20px_10px_rgba(129,81,253,0.5)]
         
         transition-all
 

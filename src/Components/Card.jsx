@@ -1,6 +1,6 @@
 const Card = () => {
     return (
-      <div className="max-w-[1200px] w-full max-h-96 bg-white p-6 shadow-lg rounded-lg mx-auto mb-10 px-4 md:px-8 lg:px-16">
+      <div className="max-w-[1200px] w-full max-h-96 bg-white p-6 rounded-lg mx-auto mb-10 px-4 md:px-8 lg:px-16 transition-shadow duration-300 ease-in-out shadow-[0_0_20px_10px_rgba(129,81,253,0.5)]">
         <div className="text-center">
           <h1 className="text-[#8151fd] text-3xl font-bold mt-4">
             Finding work?
