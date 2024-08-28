@@ -5,8 +5,8 @@ import Marquee from "react-fast-marquee";
 
 const Experience = () => {
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center text-center mt-10 mb-10">
+    <div className="px-4 sm:px-6 md:px-8">
+      <div className="flex flex-col justify-center items-center text-center mt-10 mb-10 mx-auto">
         <div className="text-black font-bold text-[32px] mb-2">
           Earn rewards for your expertise
         </div>
@@ -65,5 +65,6 @@ const Experience = () => {
     </div>
   );
 };
+
 
 export default Experience;
